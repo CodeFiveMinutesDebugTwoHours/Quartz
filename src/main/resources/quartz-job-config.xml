@@ -17,7 +17,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
         <!-- 调用类中的方法 -->
         <property name="targetMethod" value="work"/>
     </bean>
-    <!-- 定义触发时间 -->
+    <!-- 定义触发时间 -->                     <!-- CronTriggerFactoryBean是新版本的以前的是CronTriggerBean -->
     <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
         <property name="jobDetail" ref="jobtask"/>
         <!-- cron表达式 -->
